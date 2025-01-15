@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Food Order Management System</h1>
+        <div class="controls">
+            <button class="order-btn regular" onclick="placeOrder('Regular')">Place Regular Order</button>
+            <button class="order-btn popular" onclick="placeOrder('Popular')">Place Popular Order</button>
+            <button class="order-btn premium" onclick="placeOrder('Premium')">Place Premium Order</button>
+            <button class="action-btn deliver" onclick="deliverOrder()">Deliver Order</button>
+            <button class="action-btn cancel-order" onclick="cancelOrder()">Cancel Order</button>
+            <button class="action-btn cancel-delivery" onclick="cancelDelivery()">Cancel Delivery</button>
+        </div>
+        <div class="queues">
+            <div class="stack-container">
+                <h2>Order Stack (Newest on Top)</h2>
+                <ul id="orderStack"></ul>
+            </div>
+            <div class="queue-container">
+                <h2>Delivery Queue (Front on Left)</h2>
+                <ul id="deliveryQueue"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
